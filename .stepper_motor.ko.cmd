@@ -1,0 +1,1 @@
+cmd_/home/ubuntu/robosys2021_device_driver/stepper_motor.ko := ld -r -EL  -maarch64elf --build-id=sha1  -T scripts/module.lds -o /home/ubuntu/robosys2021_device_driver/stepper_motor.ko /home/ubuntu/robosys2021_device_driver/stepper_motor.o /home/ubuntu/robosys2021_device_driver/stepper_motor.mod.o;  true

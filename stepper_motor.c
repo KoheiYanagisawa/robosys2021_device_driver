@@ -21,7 +21,7 @@ static volatile u32 *gpio_base = NULL;
 static ssize_t motor_write(struct file* filp, const char* buf, size_t count, loff_t* pos)
 {
 	char c;
-	int ms = 800, us;
+	int ms = 800;
 	int i;	
     	if(copy_from_user(&c, buf, sizeof(char)))
         	return -EFAULT;
@@ -43,15 +43,6 @@ static ssize_t motor_write(struct file* filp, const char* buf, size_t count, lof
 			fsleep(ms);
 			gpio_base[7] = 1 << 25;
 		}
-	}else if(c > 1){
-		us = c;
-		gpio_base[7] = 1 << 24;
-                for(i = 0; i < 400 ; i++ ){
-                        fsleep(us);
-                        gpio_base[10] = 1 << 25;
-                        fsleep(us);
-                        gpio_base[7] = 1 << 25;
-                }
 	}
     	return 1;
 }

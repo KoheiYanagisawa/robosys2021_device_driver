@@ -45,7 +45,7 @@
  
  - 正転
  ```
-  $ echo 0 > /dev/stepper_motor0
+  $ echo  > /dev/stepper_motor0
  ```
  
  - 逆転

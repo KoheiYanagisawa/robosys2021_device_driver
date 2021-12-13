@@ -30,9 +30,11 @@
   $ sudo insmod stepper_motor.ko
  ```
   
- ### アンインストール
+ ### アンインストール・デバイスファイルの削除
  ```
   $ sudo rmmod stepper_motor
+  
+  $ make clean
  ```
   
  ### 実行

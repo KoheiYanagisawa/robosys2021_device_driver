@@ -17,19 +17,22 @@
  ### セットアップ
  <code>
   git clone https://github.com/KoheiYanagisawa/robosys2021_device_driver.git
+ 
   cd robosys2021_device_driver
+ 
   ./setup.bash
  </code>
  
  ### インストール
  <code>
   make
+ 
   sudo insmod stepper_motor.ko
  </code>
   
  ### アンインストール
  <code>
-  sudo rmmod stepper_motor 
+  sudo rmmod stepper_motor
  </code>
   
  ### 実行
@@ -37,6 +40,7 @@
  <code>
   sudo chmod 666 /dev/stepper_motor0
  </code>
+ 
  - 正転
  <code>
   echo 0 > /dev/stepper_motor0

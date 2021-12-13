@@ -15,38 +15,38 @@
  ![20211213_193723](https://user-images.githubusercontent.com/76610691/145852927-78086c1d-b005-4771-b367-2d71ebd48efe.jpg)
  ## 実行方法
  ### セットアップ
- <code>
-  git clone https://github.com/KoheiYanagisawa/robosys2021_device_driver.git
+ ```
+  $ git clone https://github.com/KoheiYanagisawa/robosys2021_device_driver.git
  
-  cd robosys2021_device_driver
+  $ cd robosys2021_device_driver
  
-  ./setup.bash
- </code>
+  $ ./setup.bash
+ ```
  
  ### インストール
- <code>
-  make
+ ```
+  $ make
  
-  sudo insmod stepper_motor.ko
- </code>
+  $ sudo insmod stepper_motor.ko
+ ```
   
  ### アンインストール
- <code>
-  sudo rmmod stepper_motor
- </code>
+ ```
+  $ sudo rmmod stepper_motor
+ ```
   
  ### 実行
  - 書き込み権限付与
- <code>
-  sudo chmod 666 /dev/stepper_motor0
- </code>
+ ```
+  $ sudo chmod 666 /dev/stepper_motor0
+ ```
  
  - 正転
- <code>
-  echo 0 > /dev/stepper_motor0
- </code>
+ ```
+  $ echo 0 > /dev/stepper_motor0
+ ```
  
  - 逆転
- <code>
-  echo 0 > /dev/stepper_motor0
- </code>
+ ```
+  $ echo 0 > /dev/stepper_motor0
+ ```

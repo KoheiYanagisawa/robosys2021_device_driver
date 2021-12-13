@@ -52,3 +52,5 @@
  ```
   $ echo 0 > /dev/stepper_motor0
  ```
+ ## 実際に動かした様子
+ https://youtu.be/SwtZJ-ZUWlo

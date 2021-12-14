@@ -19,8 +19,6 @@
   $ git clone https://github.com/KoheiYanagisawa/robosys2021_device_driver.git
  
   $ cd robosys2021_device_driver
- 
-  $ ./setup.bash
  ```
  
  ### インストール
